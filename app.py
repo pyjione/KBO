@@ -311,14 +311,14 @@ with menu[3]:
             }
 
             # 게임 일정 출력
-    for g in games:
-        home_team = g["홈팀"]  # 기존 home_team_ -> home_team로 수정
-        away_team = g["원정팀"]
+            for g in games:
+                home_team = g["홈팀"]  # 기존 home_team_ -> home_team로 수정
+                away_team = g["원정팀"]
 
-        # 한국어로 팀명 및 구장 매핑
-        home_team_kor = team_translation.get(home_team, home_team)  # home_team_ -> home_team
-        away_team_kor = team_translation.get(away_team, away_team)
-        stadium = stadium_translation.get(g["구장"], g["구장"])
+                # 한국어로 팀명 및 구장 매핑
+                home_team_kor = team_translation.get(home_team, home_team)  # home_team_ -> home_team
+                away_team_kor = team_translation.get(away_team, away_team)
+                stadium = stadium_translation.get(g["구장"], g["구장"])
 
-        # 출력 형식 수정
-        st.markdown(f"- **{g['날짜']} {g['시간']}** | **{home_team_kor}** vs. **{away_team_kor}** 🏟️ ({stadium})")
+                # 출력 형식 수정
+                st.markdown(f"- **{g['날짜']} {g['시간']}** | **{home_team_kor}** vs. **{away_team_kor}** 🏟️ ({stadium})")
