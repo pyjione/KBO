@@ -1,0 +1,5 @@
+model_list:
+  - model_name: openrouter-gpt-3.5
+    litellm_provider: openrouter
+    api_key: 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
+    base_url: https://openrouter.ai/api/v1
